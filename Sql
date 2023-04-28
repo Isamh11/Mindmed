@@ -1,3 +1,6 @@
+# pip install mysql-connector-python
+
+
 CREATE DATABASE  Mindmed
 
 drop TABLE employee;
