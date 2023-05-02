@@ -14,6 +14,16 @@ class MainApp(QMainWindow, ui):
         self.tabWidget.tabBar().setVisible(False)
         self.menubar.setVisible(False)
         self.b01.clicked.connect(self.login)
+
+        
+        self.menu21.triggered.connect(self.show_add_new_member_tab)
+        self.b211.clicked.connect(self.save_member_informatom)
+        self.menu22.triggered.connect(self.show_edit_member_tab)
+        self.b500.clicked.connect(self.fill_information_of_the_selected_member)
+        self.b221.clicked.connect(self.edit_member_information)
+        self.b222.clicked.connect(self.delete_member_information) 
+        
+        
 # Login form #####
 
     def login(self):
